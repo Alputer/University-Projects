@@ -1,0 +1,48 @@
+Getting Started
+
+
+Prerequisites
+
+    Node.js
+    npm
+    Java(Openjdk 17)
+    Maven
+    MySQL
+    IntellijIDEA
+
+   
+Installation
+
+    Open repository with IntellijIDEA
+    cd MovieDB (Navigate to the project directory)
+
+    Frontend(React.js):
+
+        cd client (Navigate to the frontend directory)
+        npm install (Install front end dependencies)
+        npm start (Start front end code on localhost)
+
+    Go back to root directory.
+
+    Database(MySql):
+
+ 	brew services start mysql (Start MySql server, exact command change based on your system.)
+	Create a mySql user and password if you don't have(root user exists by default)
+	cd /server/src/main/resources (Navigate to application.preperties file location)
+	Open application.properties file
+	Change 	spring.datasource.username= {YOUR_USER_NAME}
+		spring.datasource.password= {YOUR_PASSWORD}  
+
+    Go back to root directory.
+
+    Backend(Java Spring):
+
+        cd server (Navigate to the backend directory.)
+        mvn clean install ( Install backend dependencies)
+        Build Project (Intellij Build Button)
+        Run ServerApplication (Intellij Run Button)
+
+
+
+
+
